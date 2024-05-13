@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            font-weight: 600;
+            list-style: none;
+            margin: 0;
+            padding:  0; 
+        }
+
+
+        .wrap {
+            height: auto;
+            border: 4px solid black;
+            margin: 0px auto;
+        }
+      
+
+        .contents {
+            width: 90%;
+            height: 500px;
+            background-color: aquamarine;
+            margin: 0px auto;
+
+        }
+
+        .wrap::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+         background-color: aqua;
+        }
+
+        .footer .inner {
+            width: 90%;
+            height: 200px;
+            border: 2px dashed blueviolet;
+            margin: 0px auto;
+        }
+
+        .header {
+            margin: 0px auto;
+        }
+
+
+
+        .inner {
+            width: 90%; /* 부모 길이의 90% */ 
+
+            margin: 0px auto;
+            height: 120px;
+            vertical-align: center;
+            background-color: beige;
+        }
+
+        .gnb {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <section class="header">
+            <div class="inner">
+                <ul class="gnb">
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                    <li>메뉴1</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="contents">contents</div>
+        <div class="footer">clear-both
+            <div class="inner"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
